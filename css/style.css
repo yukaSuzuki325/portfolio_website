@@ -70,11 +70,11 @@ nav.r-nav.stickyadd {
   transition: 0.5s all ease-in-out;
 }
 
-/* nav.stickyadd .navbar-brand {
+nav.stickyadd .navbar-brand {
   color: #000;
   font-size: 40px;
   transition: 0.5s all;
-} */
+}
 
 nav.stickyadd .navbar-nav .nav-link {
   color: #000 !important;
