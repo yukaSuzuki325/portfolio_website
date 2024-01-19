@@ -1,8 +1,5 @@
 <?php
 
-echo 'SMTP_USER: ' . getenv('SMTP_USER') . '<br>';
-echo 'SMTP_PASS: ' . getenv('SMTP_PASS') . '<br>';
-
 require '../vendor/phpmailer/src/Exception.php';
 require '../vendor/phpmailer/src/PHPMailer.php';
 require '../vendor/phpmailer/src/SMTP.php';
