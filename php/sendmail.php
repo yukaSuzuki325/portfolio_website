@@ -1,5 +1,8 @@
 <?php
 
+echo 'SMTP_USER: ' . getenv('SMTP_USER') . '<br>';
+echo 'SMTP_PASS: ' . getenv('SMTP_PASS') . '<br>';
+
 require '../vendor/phpmailer/src/Exception.php';
 require '../vendor/phpmailer/src/PHPMailer.php';
 require '../vendor/phpmailer/src/SMTP.php';
@@ -19,14 +22,14 @@ try {
         $mail->isSMTP();
         $mail->Host = 'smtp.gmail.com';
         $mail->SMTPAuth = true;
-        $mail->Username = 'yuka.kurihara821@gmail.com';
-        $mail->Password = 'orwp lzbj ikzt pzbo';
+        $mail->Username = getenv('SMTP_USER');
+        $mail->Password = getenv('SMTP_PASS');
         $mail->SMTPSecure = PHPMailer::ENCRYPTION_SMTPS;
         $mail->Port = 465;
 
         //Recipients
-        $mail->setFrom('yuka.kurihara821@gmail.com', 'Yuka Suzuki');
-        $mail->addAddress('yuka.kurihara821@gmail.com', 'Yuka Suzuki');
+        $mail->setFrom(getenv('SMTP_USER'), 'Yuka Suzuki');
+        $mail->addAddress(getenv('SMTP_USER'), 'Yuka Suzuki');
         $mail->addReplyTo($_POST['email'], $_POST['name']);
 
         // Content
