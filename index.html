@@ -246,22 +246,22 @@
           </div>
         </div>
     
-        <form action="sendmail.php" method="POST" class="row g-3 mt-5">
+        <form action="php/sendmail.php" method="POST" class="row g-3 mt-5">
           <div class="col-md-6">
-            <input type="text" class="form-control" placeholder="Name" required />
+            <input type="text" class="form-control" name="name" placeholder="Name" required />
           </div>
           <div class="col-md-6">
-            <input type="email" class="form-control" placeholder="Email" />
+            <input type="email" class="form-control" name="email" placeholder="Email" required />
           </div>
     
           <div class="col-12">
-            <input type="text" class="form-control" placeholder="Subject" />
+            <input type="text" class="form-control" name="subject" placeholder="Subject" required />
           </div>
           <div class="col-12">
             <textarea
               class="form-control"
-              rows="7"
-              placeholder="Your Message"
+              rows="7" name="message" 
+              placeholder="Your Message" required
             ></textarea>
           </div>
           <div class="col-12">
@@ -270,8 +270,6 @@
         </form>
       </div>
     </section>
-
-
 
 
     <script src="lib/jquery-3.7.1.min.js"></script>
