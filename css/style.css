@@ -4,17 +4,21 @@
   padding: 0;
 }
 
-h1,
+h1 {
+  font-family: 'Caveat', cursive;
+  font-weight: 600;
+}
+
 h2,
 h3,
 h4,
 h5,
 h6 {
-  font-family: 'Quicksand', sans-serif;
+  font-family: 'Nunito', sans-serif;
 }
 
 p {
-  font-family: 'Nunito Sans', sans-serif;
+  font-family: 'Open Sans', sans-serif;
   font-size: 20px;
   line-height: 30px;
   color: #6c757d;
