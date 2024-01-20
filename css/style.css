@@ -39,6 +39,42 @@ p {
   background: #f8f9fa;
 }
 
+/* Preloader */
+.loader-container {
+  width: 100%;
+  height: 100vh;
+  background-color: #000;
+  position: fixed;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.loader {
+  width: 50px;
+  height: 50px;
+  border: 5px solid;
+  color: #3498db;
+  border-radius: 50%;
+  border-top-color: transparent;
+  animation: loader 1.2s linear infinite;
+}
+
+@keyframes loader {
+  25% {
+    color: #2ecc71;
+  }
+  50% {
+    color: #f1c40f;
+  }
+  75% {
+    color: #e74c3c;
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
 /* Navbar */
 nav.r-nav {
   background: transparent;
@@ -61,6 +97,10 @@ nav .navbar-nav li a {
   letter-spacing: 0.05em;
   font-weight: 600;
   font-family: 'Nunito Sans', sans-serif;
+}
+
+.nav-link:hover {
+  color: #ee8683 !important;
 }
 
 nav .navbar-nav li {
