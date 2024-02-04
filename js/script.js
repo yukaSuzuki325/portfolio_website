@@ -1,4 +1,5 @@
 $(document).ready(() => {
+  AOS.init();
   $(window).on('load', function () {
     $('.loader-container').fadeOut(1500, function () {
       $(this).css('display', 'none');

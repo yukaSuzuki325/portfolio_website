@@ -18,7 +18,9 @@
     <link rel="manifest" href="assets/favicon/site.webmanifest">
 
     <!--Bootstrap-->
-    <link rel="stylesheet" href="css/bootstrap.min.css" />    
+    <link rel="stylesheet" href="css/bootstrap.min.css" /> 
+    <!--AOS-->
+    <link rel="stylesheet" href="css/aos.css">   
     <!--Stylesheet-->
     <link rel="stylesheet" href="css/style.css" />
 
@@ -67,7 +69,7 @@
       <div class="container-fluid header-content">
         <div class="row">
           <div class="col text-center">
-            <div class="content-box">
+            <div class="content-box" data-aos="zoom-in" data-aos-delay="300">
               <h1>Yuka Suzuki</h1>
               <p>FULL-STACK SOFTWARE DEVELOPER, BASED IN BRISTOL, UK.</p>              
             </div>
@@ -78,11 +80,11 @@
 
     <!-- About Me-->
     <section class="about r-p" id="about">
-      <div class="container">
+      <div class="container" data-aos="fade-up">
         <div class="row">
-          <div class="col-lg-6">
+          <div class="col-lg-6 d-flex flex-column align-items-center">
             <img
-              src="assets/images/balloons.jpg" width="400" height="500"
+              src="assets/images/evie-s-PekUbGZQMlM-unsplash.jpg" width="400" height="500"
               class="img-fluid img-thumbnail"
               alt="image of balloons in the sky"
             />
@@ -131,7 +133,7 @@
 
     <!--Skills-->
     <section class="skills r-p" id="skills">
-      <div class="container">
+      <div class="container" data-aos="fade-right">
         <div class="container text-center">
           <div class="row">
             <div class="col">
@@ -147,8 +149,8 @@
     </section>
 
     <!-- Experience -->
-    <section id="resume" class="resume r-p">
-      <div class="container">
+    <section id="experience" class="experience r-p">
+      <div class="container" data-aos="fade-up">
 
         <div class="container text-center">
           
@@ -161,8 +163,8 @@
 
 
         <div class="row mt-5">
-          <div class="col-lg-6">                          
-            <div class="resume-item">
+          <div class="experience-col col-lg-6 border-start">                          
+            <div class="experience-item px-5">
               <h4>Senior Travel Operation Specialist</h4>
               <h5>March 2022 - July 2023</h5>
               <p><em>Inside Travel Group Ltd</em></p>
@@ -174,7 +176,7 @@
               </ul>
               </p>
             </div>
-            <div class="resume-item">
+            <div class="experience-item px-5">
               <h4>Student Administrator</h4>
               <h5>July 2021 - February 2022</h5>
               <p><em>University of Bristol</em></p>
@@ -187,8 +189,8 @@
               </p>
             </div>
           </div>
-          <div class="col-lg-6">
-            <div class="resume-item">
+          <div class="experience-col col-lg-6 border-start">
+            <div class="experience-item px-5">
               <h4>Senior Travel Operation Specialist</h4>
               <h5>March 2022 - July 2023</h5>
               <p><em>Inside Travel Group Ltd</em></p>
@@ -200,7 +202,7 @@
               </ul>
               </p>
             </div>
-            <div class="resume-item">
+            <div class="experience-item px-5">
               <h4>Student Administrator</h4>
               <h5>July 2021 - February 2022</h5>
               <p><em>University of Bristol</em></p>
@@ -215,7 +217,7 @@
             
           </div>
           <div class="d-flex flex-column align-items-center mt-5">
-            <a href="#" class="btn r-btn cv">Download CV</a>
+            <a href="#" class="btn btn-custom text-white cv">Download CV</a>
           </div>
         </div>
 
@@ -224,7 +226,7 @@
 
     <!--Portfolio-->
     <section class="portfolio r-p" id="portfolio">
-      <div class="container">
+      <div class="container" data-aos="fade-left">
         <div class="container text-center">
           <div class="row">
             <div class="col">
@@ -252,7 +254,7 @@
     <!--Contact Me-->
 
     <section class="contact r-p bg-sec" id="contact">
-      <div class="container text-center">
+      <div class="container text-center" data-aos="fade-up">
         <div class="row">
           <div class="col">
             <h2>Contact</h2>
@@ -281,7 +283,7 @@
             ></textarea>
           </div>
           <div class="col-12">
-            <button type="submit" class="btn r-btn float-right">Submit</button>
+            <button type="submit" class="btn btn-custom text-white float-right">Submit</button>
           </div>
         </form>
       </div>
@@ -289,6 +291,7 @@
 
     <script src="js/jquery-3.7.1.min.js"></script>
     <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/aos.js"></script>
     <script src="js/script.js"></script>
   </body>
 </html>

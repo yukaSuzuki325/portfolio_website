@@ -23,10 +23,9 @@ p {
   color: #6c757d;
 }
 
-.r-btn {
+.btn-custom {
   padding: 5px 20px;
-  background-color: #ee8683 !important;
-  color: #fff !important;
+  background-color: #ee8683;
 }
 
 .r-p {
@@ -88,6 +87,11 @@ ul {
 nav .navbar-brand {
   font-size: 30px;
   color: #fff;
+}
+
+nav .navbar-brand:hover {
+  font-size: 30px;
+  color: rgb(39, 123, 202);
 }
 
 nav .navbar-nav li a {
@@ -183,6 +187,11 @@ header {
 
 .about li a:hover {
   color: #ee8683;
+}
+
+/* Experience */
+.experience .experience-item {
+  position: relative;
 }
 
 /*Contact Me*/
