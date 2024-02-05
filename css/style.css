@@ -174,21 +174,6 @@ header {
   color: rgba(255, 255, 255, 0.8);
 }
 
-/* About Me*/
-.about li a {
-  color: #000;
-  display: inline-block;
-  height: 42px;
-  font-size: 25px;
-  line-height: 40px;
-  transition: 0.5s all;
-  text-align: center;
-}
-
-.about li a:hover {
-  color: #ee8683;
-}
-
 /* Experience */
 .experience .experience-item {
   position: relative;
@@ -197,6 +182,27 @@ header {
 /*Contact Me*/
 .form-group {
   margin: 15px;
+}
+
+/*Footer*/
+
+footer {
+  background-color: #46484b;
+  height: 150px;
+}
+
+.link-icon a {
+  font-size: 20px;
+  color: #848484;
+  padding: 10px;
+  border: 1px solid #848484;
+  border-radius: 50%;
+}
+
+.link-icon a:hover {
+  border: 1px solid #eee;
+  color: #eee;
+  transition: 0.5s all;
 }
 
 /*Media query*/
