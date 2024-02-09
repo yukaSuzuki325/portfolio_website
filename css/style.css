@@ -16,6 +16,10 @@ h6 {
   font-family: 'Nunito', sans-serif;
 }
 
+h2 {
+  color: rgb(56, 56, 56);
+}
+
 p {
   font-family: 'Open Sans', sans-serif;
   font-size: 20px;
@@ -24,6 +28,11 @@ p {
 }
 
 .btn-custom {
+  padding: 5px 20px;
+  background-color: #ee8683;
+}
+
+.btn-custom:hover {
   padding: 5px 20px;
   background-color: #ee8683;
 }
@@ -166,7 +175,7 @@ header {
 }
 
 .content-box h1 {
-  font-size: 60px;
+  font-size: 55px;
 }
 
 .content-box p {
@@ -225,7 +234,7 @@ footer {
   }
 
   .content-box h1 {
-    font-size: 30px;
+    font-size: 40px;
   }
   .content-box p {
     font-size: 16px;
