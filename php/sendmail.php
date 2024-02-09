@@ -32,8 +32,9 @@ try {
         // Content
         $mail->isHTML(true);
         $mail->Subject = $_POST['subject'];
-        $mail->Body = nl2br(e($_POST['message']));
-        $mail->AltBody = e($_POST['message']);
+        $mail->Body = "Email from: " . $_POST['email'] . "<br><br>" . nl2br(e($_POST['message']));
+        $mail->AltBody = "Email from: " . $_POST['email'] . "\n\n" . e($_POST['message']);
+
 
         $mail->send();
         echo 'Message has been sent';
