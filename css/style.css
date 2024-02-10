@@ -183,6 +183,22 @@ header {
   color: rgba(255, 255, 255, 0.8);
 }
 
+/*Skills*/
+.skill-row .col-md-3 {
+  padding: 0 10px;
+}
+
+.skill-row .col-md-3 img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.skill-row {
+  display: flex;
+  justify-content: center;
+}
+
 /* Experience */
 .experience .experience-item {
   position: relative;
