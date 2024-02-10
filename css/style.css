@@ -184,6 +184,10 @@ header {
 }
 
 /*Skills*/
+.skill-image-container {
+  max-width: 80%;
+  margin: 0 auto;
+}
 .skill-row .col-md-3 {
   padding: 0 10px;
 }
