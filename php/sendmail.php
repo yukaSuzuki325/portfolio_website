@@ -17,16 +17,16 @@ try {
     ) {
         //Server settings
         $mail->isSMTP();
-        $mail->Host = 'smtp.gmail.com';
+        $mail->Host = 'smtp.hostinger.com';
         $mail->SMTPAuth = true;
-        $mail->Username = getenv('SMTP_USER');
-        $mail->Password = getenv('SMTP_PASS');
+        $mail->Username = 'info@yukasuzuki.co.uk';
+        $mail->Password = 'mikan7076_HO';
         $mail->SMTPSecure = PHPMailer::ENCRYPTION_SMTPS;
         $mail->Port = 465;
 
         //Recipients
-        $mail->setFrom(getenv('SMTP_USER'), 'Yuka Suzuki');
-        $mail->addAddress(getenv('SMTP_USER'), 'Yuka Suzuki');
+        $mail->setFrom('info@yukasuzuki.co.uk', 'Yuka Suzuki');
+        $mail->addAddress('info@yukasuzuki.co.uk', 'Yuka Suzuki');
         $mail->addReplyTo($_POST['email'], $_POST['name']);
 
         // Content
