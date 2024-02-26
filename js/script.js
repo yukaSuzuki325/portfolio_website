@@ -1,11 +1,12 @@
 $(document).ready(() => {
   AOS.init();
 
-  // $(window).on('load', function () {
-  //   $('.loader-container').fadeOut(1500, function () {
-  //     $(this).css('display', 'none');
-  //   });
-  // });
+  $(window).on('load', function () {
+    $('.preloader-container').fadeOut(3500, function () {
+      console.log('hey');
+      $(this).css('display', 'none');
+    });
+  });
 
   $(window).on('scroll', () => {
     const scroll = $(window).scrollTop();
@@ -16,3 +17,17 @@ $(document).ready(() => {
     }
   });
 });
+
+$('.portfolio-img').hover(
+  function () {
+    $(this).css({
+      transform: 'scale(1.1)', // Scale the image up to 110%
+      transition: 'transform 0.3s ease', // Smooth transition for the transform
+    });
+  },
+  function () {
+    $(this).css({
+      transform: 'scale(1)', // Reset the scale back to normal
+    });
+  }
+);
