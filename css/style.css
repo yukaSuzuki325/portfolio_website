@@ -162,7 +162,7 @@ ul {
   margin: auto;
 }
 
-nav .navbar-brand {
+/* nav .navbar-brand {
   font-size: 30px;
   color: #fff;
 }
@@ -170,7 +170,7 @@ nav .navbar-brand {
 nav .navbar-brand:hover {
   font-size: 30px;
   color: rgb(77, 236, 228);
-}
+} */
 
 nav .navbar-nav li a {
   color: rgba(255, 255, 255, 0.884) !important;
@@ -195,11 +195,11 @@ nav.r-nav.stickyadd {
   transition: 0.5s all ease-in-out;
 }
 
-nav.stickyadd .navbar-brand {
+/* nav.stickyadd .navbar-brand {
   color: #000;
   font-size: 40px;
   transition: 0.5s all;
-}
+} */
 
 nav.stickyadd .navbar-nav .nav-link {
   color: #000 !important;
