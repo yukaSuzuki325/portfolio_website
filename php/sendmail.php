@@ -3,6 +3,12 @@
 require '../vendor/phpmailer/src/Exception.php';
 require '../vendor/phpmailer/src/PHPMailer.php';
 require '../vendor/phpmailer/src/SMTP.php';
+require __DIR__ . '/../vendor/autoload.php';
+
+
+$dotenv = Dotenv\Dotenv::createImmutable(__DIR__ . '/..');
+$dotenv->load();
+
 
 use PHPMailer\PHPMailer\PHPMailer;
 use PHPMailer\PHPMailer\Exception;
