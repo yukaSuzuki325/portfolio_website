@@ -3,7 +3,7 @@ $(document).ready(() => {
 
   $(window).on('load', function () {
     $('.preloader-container').fadeOut(3500, function () {
-      console.log('hey');
+      // console.log('here');
       $(this).css('display', 'none');
     });
   });
