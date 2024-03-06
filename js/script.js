@@ -1,7 +1,6 @@
 $(window).on('load', function () {
   $('.preloader-container').fadeOut(3500, function () {
-    // console.log('here');
-    $(this).css('display', 'none');
+    $('.preloader-container').css('display', 'none');
   });
 });
 
