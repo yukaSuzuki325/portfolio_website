@@ -32,20 +32,25 @@ $('.portfolio-img').hover(
 
 $('#contact-form').submit(function (e) {
   e.preventDefault();
-
   var formData = $(this).serialize();
+
+  $('#loadingSpinner').removeClass('d-none');
 
   $.ajax({
     type: 'POST',
     url: 'php/sendmail.php',
     data: formData,
     success: function (response) {
+      $('#loadingSpinner').addClass('d-none');
+
       var myModal = new bootstrap.Modal(
         document.getElementById('thankYouModal')
       );
       myModal.show();
     },
     error: function () {
+      $('#loadingSpinner').addClass('d-none');
+
       alert('There was an error sending the message.');
     },
   });

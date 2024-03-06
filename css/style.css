@@ -59,6 +59,11 @@ a {
   background: #f8f9fa;
 }
 
+/* Contact */
+/* #loadingSpinner {
+  display: none;
+} */
+
 /* Preloader */
 .preloader-container {
   display: flex;
