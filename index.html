@@ -315,29 +315,27 @@
             </p>
           </div>
         </div>
-    
-        <form action="php/sendmail.php" method="POST" class="row g-3 mt-5">
+
+        <!-- Begin Contact Form -->
+        <form id="contact-form" class="row g-3 mt-5" method="POST" action="php/sendmail.php">
           <div class="col-md-6">
             <input type="text" class="form-control" name="name" placeholder="Name" required />
           </div>
           <div class="col-md-6">
             <input type="email" class="form-control" name="email" placeholder="Email" required />
           </div>
-    
           <div class="col-12">
             <input type="text" class="form-control" name="subject" placeholder="Subject" required />
           </div>
           <div class="col-12">
-            <textarea
-              class="form-control"
-              rows="7" name="message" 
-              placeholder="Your Message" required
-            ></textarea>
+            <textarea class="form-control" rows="7" name="message" placeholder="Your Message" required></textarea>
           </div>
           <div class="col-12">
             <button type="submit" class="btn btn-custom text-white float-right mt-3">Submit</button>
           </div>
         </form>
+        <!-- End Contact Form -->    
+        
       </div>
     </section>    
 
@@ -368,6 +366,25 @@
         </div>
       </div>
     </footer>
+
+    <!-- Thank You Modal -->
+    <div class="modal fade" id="thankYouModal" tabindex="-1" aria-labelledby="thankYouModalLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="thankYouModalLabel">Message Received</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            Thank you for your message. I will respond to you as soon as possible.
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
 
     <script src="js/jquery-3.7.1.min.js"></script>
     <script src="js/bootstrap.bundle.min.js"></script>
