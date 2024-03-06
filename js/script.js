@@ -42,6 +42,8 @@ $('#contact-form').submit(function (e) {
     success: function (response) {
       $('#loadingSpinner').addClass('d-none');
 
+      document.getElementById('contact-form').reset();
+
       var myModal = new bootstrap.Modal(
         document.getElementById('thankYouModal')
       );
@@ -50,7 +52,9 @@ $('#contact-form').submit(function (e) {
     error: function () {
       $('#loadingSpinner').addClass('d-none');
 
-      alert('There was an error sending the message.');
+      document.getElementById('contact-form').reset();
+
+      alert('There was an error sending the message. Please try again later.');
     },
   });
 });
